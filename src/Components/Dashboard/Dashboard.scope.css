@@ -1,0 +1,52 @@
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* font-family: Lato; */
+    margin-top: -60px;
+}
+
+.title-intro{
+    font-size: small;
+}
+
+.title-name{
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.title-job{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container-page{
+    margin:0;
+    padding-top: 50vw;
+    padding-bottom:10vw;
+    height: 100%;
+    width: 100vw;
+    align-content: center;
+}
+
+.star{
+    width: 100px;
+    height: 100px;
+    color:#624F82;
+}
+
+.star1{
+    width: 100px;
+    height: 100px;
+    color:#9F73AB;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.active-link {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f0f, 0 0 70px #f0f, 0 0 80px #f0f, 0 0 100px #f0f;
+}

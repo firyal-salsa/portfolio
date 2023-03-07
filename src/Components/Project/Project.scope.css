@@ -1,0 +1,60 @@
+.cs-width{
+    width: 750px;
+    left: 35vw;
+    bottom: -7vw;
+}
+
+.image-cn {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-cn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .image-cn:hover .overlay-cn {
+    opacity: 1;
+    background-color: #3F3B6D;
+  }
+  
+  .text-cn {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.image:hover {
+    opacity: 0.5;
+    background-color: #3F3B6D;
+  }
+
+
+  .container-page-project{
+    margin:0;
+    padding-top: 50vw;
+    width: 100vw;
+    left: 10vw;
+    align-content: center;
+}

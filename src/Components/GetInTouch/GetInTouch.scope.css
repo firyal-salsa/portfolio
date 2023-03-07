@@ -1,0 +1,5 @@
+.social-media{
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}

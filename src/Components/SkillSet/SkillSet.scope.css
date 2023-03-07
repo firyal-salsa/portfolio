@@ -1,0 +1,221 @@
+.container-page-skillset{
+  margin-left: 13vw;
+  padding-top: 50vw;
+  padding-bottom:50vw;
+  height: 100%;
+  width: 100vw;
+
+  align-content: center;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+
+.carousel {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+
+
+  .testing{
+    background-color:#9F73AB;
+  }
+  
+
+  
+  #galaxy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*perspective: 4000;*/ }
+  
+  #solar-system {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    animation-name: orbit;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  
+  .pos {
+    position: absolute;
+    top: 50%;
+    width: 2em;
+    height: 2em;
+    margin-top: -1em;
+    margin-left: -1em;
+    transform-style: preserve-3d;
+    animation-name: invert;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  
+  #sun, .planet, #earth .moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    border-radius: 50%;
+    transform-style: preserve-3d; }
+  
+  #sun {
+    background: #3a3587;
+    background: linear-gradient(0deg, rgb(56, 51, 148) 23%, rgba(77,47,104,1) 100%);
+    box-shadow: 0 0 60px rgb(56, 51, 148); 
+  }
+  
+  .planet {
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  
+  .ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%; }
+  
+  /* --------------------------------------------------------------------------- planets index */
+  #earth {
+    z-index: 2; }
+  #sun {
+    z-index: 1; }
+  
+  /* --------------------------------------------------------------------------- animations */
+  
+  @keyframes orbit {
+    0% {
+      transform: rotateZ(0deg); }
+  
+    100% {
+      transform: rotateZ(-360deg); } }
+  
+  @keyframes invert {
+    0% {
+      transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+  
+    100% {
+      transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
+   
+  
+  /* --------------------------------------------------------------------------- 3D view */
+  
+  .view-3D #solar-system {
+    transform: rotateX(75deg); }
+  
+  .view-3D #sun {
+    transform: rotateX(-90deg); }
+  
+  .view-3D .ring {
+    transform: rotateX(90deg); }
+  
+  .view-3D .planet{
+    transform: rotateX(0deg); }
+  
+  /* --------------------------------------------------------------------------- speed */
+  /* sideral years */
+  #earth .pos,
+  #earth .planet,
+  #earth.orbit {
+    animation-duration: 12.00021s; }
+  
+  #earth .orbit .pos,
+  #earth .orbit {
+    animation-duration: 0.89764s; }
+  
+  /* --------------------------------------------------------------------------- stretched sizes */
+  .scale-stretched #sun {
+    font-size: 20em; }
+  
+  .scale-stretched #earth .planet {
+    font-size: 3.92em; }
+  
+  /* --------------------------------------------------------------------------- stretched orbits */
+  
+  .scale-stretched #earth.orbit {
+    width: 56em;
+    height: 56em;
+    margin-top: -28em;
+    margin-left: -28em; }
+  
+  .scale-stretched #earth .orbit {
+    width: 6em;
+    height: 6em;
+    margin-top: -3em;
+    margin-left: -3em; }
+  
+  /* --------------------------------------------------------------------------- earth ; pos: Right */
+  #earth .pos {
+    left: 100%;
+    top: 50%; }
+  
+  #earth .planet {
+    animation-name: shadow-earth; }
+  
+  .scaled.view-3D #earth .planet {
+    box-shadow: inset -4px 0 2px white;
+    /* RIGHT */ }
+  
+  .earth #earth.orbit {
+    border: 1px solid rgba(255, 255, 255, 0.8); }
+  
+  /* --------------------------------------------------------------------------- transitions */
+  .pos {
+    transition-property: top, left; }
+  
+  #solar-system, .orbit,
+  .planet,
+  .satelite,
+  .ring {
+    transition-property: width, height, top, left, margin-left, margin-top, webkit-transform; }
+  
+  #sun, .icon {
+    transition-property: width, height, webkit-transform; }
+  
+  #solar-system,
+  #sun,
+  .orbit,
+  .pos,
+  .planet,
+  .satelite,
+  .ring,
+  .icon {
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out; }
+  
+  #solar-system,
+  #sun,
+  .planet,
+  .satelite,
+  .ring {
+    transition-delay: 0s; }
+  
+  .pos {
+    transition-delay: 1s; }
