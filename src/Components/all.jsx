@@ -4,7 +4,6 @@ import Education from "./Education/Education.component"
 import WorkingHistory from "./WorkingHistory/WorkingHistory.component";
 import Project from "./Project/Project.component"
 import SkillSet from "./SkillSet/SkillSet.component";
-import GetInTouch from "./GetInTouch/GetInTouch.component"
 
 function All() {
     return (

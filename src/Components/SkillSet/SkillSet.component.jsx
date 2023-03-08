@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component, useRef} from "react";
+import React from "react";
 import "./SkillSet.scope.css";
 
 const SkillSet = () => {
