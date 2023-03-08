@@ -8,21 +8,12 @@
     margin-top: -60px;
 }
 
-.title-intro{
-    font-size: small;
-    text-align: left;
-}
 
 .title-name{
     font-weight: 500;
     font-size: 100px;
 }
 
-.title-job{
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-}
 
 .container-page{
     margin:0;
