@@ -10,6 +10,7 @@
 
 .title-intro{
     font-size: small;
+    text-align: left;
 }
 
 .title-name{
@@ -20,6 +21,7 @@
 .title-job{
     font-style: italic;
     font-weight: 300;
+    text-align: left;
 }
 
 .container-page{
