@@ -59,9 +59,9 @@ function Home() {
         </div>
       </header>
       <div className="container justify-items-center" id='title'>
-        <h3 className='text-left bold'>Hey, There! I am</h3>
+        <h3 className='bold'>Hey, There! I am</h3>
           <h1 className='text-[100px]'>Firyal</h1>
-        <h3 className='text-left italic'>Devops Engineer</h3>
+        <h3 className='italic'>Devops Engineer</h3>
         {/* <p className="italic text-center justify-center">
         “It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.” -Charles Darwin
         </p> */}
