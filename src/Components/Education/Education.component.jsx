@@ -3,7 +3,7 @@ import './Education.scope.css'
 
 function Education() {
   return (
-    <div className='container left-18 space-y-10' id='education'>
+    <div className='container space-y-10' id='education'>
       <div>
         <h1 className='mb-8 text-5xl'>Education</h1>
         <h2>DevOps Engineer</h2>
