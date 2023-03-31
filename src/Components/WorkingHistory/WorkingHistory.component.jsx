@@ -4,7 +4,7 @@ import './WorkingHistory.scope.css'
 function WorkingHistory() {
   return (
     <div>
-         <div className="container left-18" id='work'>
+         <div className="container-page-project relative" id='work'>
             <h1 className='mb-8 text-5xl'>Experience</h1>
             <h2>Software Engineer</h2>
             <h3>PT. Citra Niaga Teknologi</h3>
